@@ -1,3 +1,4 @@
+// Durban HomeFix Plumbing - Form Functionality
 const enquiryForm = document.getElementById("enquiryForm");
 
 if (enquiryForm) {
