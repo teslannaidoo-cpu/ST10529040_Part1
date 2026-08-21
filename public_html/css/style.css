@@ -1,0 +1,570 @@
+/* =========================================
+   GLOBAL STYLES
+   Durban Home Fixing Plumbing
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    background-color: #12355b;
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 5px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #67c8ff;
+}
+
+.nav-links a:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #12355b;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #12355b;
+}
+
+section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #12355b;
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+    width: 100%;
+    max-width: none;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(18, 53, 91, 0.88),
+            rgba(18, 53, 91, 0.88)
+        );
+    color: #ffffff;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-size: 3.2rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button {
+    display: inline-block;
+    background-color: #1976d2;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    padding: 13px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0f5da8;
+    transform: translateY(-2px);
+}
+
+.button:focus {
+    outline: 3px solid #67c8ff;
+    outline-offset: 3px;
+}
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   SERVICES
+   ========================================= */
+
+.services-preview {
+    background-color: #f5f7fa;
+    max-width: none;
+    width: 100%;
+    text-align: center;
+}
+
+.services-preview > h2,
+.services-preview > p,
+.services-preview > .button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-container,
+.services-list,
+.location-container,
+.mission-vision {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card,
+.location-card,
+.mission-vision article {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.service-card:hover,
+.location-card:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+.service-card .button {
+    margin-top: 10px;
+}
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+.about-section {
+    text-align: center;
+}
+
+.about-section p {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-vision {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* =========================================
+   WHY CHOOSE US
+   ========================================= */
+
+.why-choose-us {
+    background-color: #f5f7fa;
+    max-width: none;
+    width: 100%;
+}
+
+.why-choose-us h2,
+.why-choose-us ul {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-choose-us ul {
+    padding-left: 25px;
+}
+
+.why-choose-us li {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   SERVICE PAGE
+   ========================================= */
+
+.services-intro {
+    text-align: center;
+}
+
+.services-intro p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* =========================================
+   ENQUIRY AND CONTACT FORMS
+   ========================================= */
+
+.enquiry-intro,
+.contact-intro {
+    text-align: center;
+}
+
+.enquiry-intro p,
+.contact-intro p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enquiry-form-section,
+.contact-form-section {
+    max-width: 800px;
+}
+
+form {
+    background-color: #f5f7fa;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font: inherit;
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid #1976d2;
+    border-color: #1976d2;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* =========================================
+   CONTACT DETAILS
+   ========================================= */
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-details p {
+    margin-bottom: 12px;
+}
+
+.contact-details a {
+    color: #1976d2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.locations {
+    background-color: #f5f7fa;
+    max-width: none;
+    width: 100%;
+}
+
+.locations > h2,
+.locations > p {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* =========================================
+   ENQUIRY INFORMATION
+   ========================================= */
+
+.enquiry-information {
+    background-color: #f5f7fa;
+    max-width: none;
+    width: 100%;
+}
+
+.enquiry-information h2,
+.enquiry-information ul {
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enquiry-information ul {
+    padding-left: 25px;
+}
+
+.enquiry-information li {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   CALL TO ACTION
+   ========================================= */
+
+.cta {
+    text-align: center;
+    background-color: #12355b;
+    color: #ffffff;
+    max-width: none;
+    width: 100%;
+}
+
+.cta h2 {
+    color: #ffffff;
+}
+
+.cta p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1023px) {
+
+    nav {
+        width: 92%;
+    }
+
+    .service-container,
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 767px) {
+
+    nav {
+        width: 90%;
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 8px 0;
+    }
+
+    section {
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    section h1 {
+        font-size: 2.1rem;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .service-container,
+    .services-list,
+    .mission-vision,
+    .location-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .location-card,
+    .mission-vision article {
+        padding: 25px;
+    }
+
+    form {
+        padding: 25px 20px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
