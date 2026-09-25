@@ -1,8 +1,14 @@
-/* Durban HomeFix Plumbing - Website Styles */
-/* =========================================
-   GLOBAL STYLES
-   Durban Home Fixing Plumbing
-   ========================================= */
+/* =========================================================
+   DURBAN HOME FIXING PLUMBING
+   PART 2 - VISUAL DESIGN AND RESPONSIVE STYLING
+   Student: Teslan Tia Naidoo
+   Student Number: ST10529040
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL RESET AND DEFAULT STYLING
+   ========================================================= */
 
 * {
     box-sizing: border-box;
@@ -16,19 +22,20 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1.6;
     color: #1f2937;
     background-color: #ffffff;
 }
 
-a {
-    color: inherit;
-}
-
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
+}
+
+a {
+    color: inherit;
 }
 
 h1,
@@ -41,22 +48,25 @@ p {
     margin-bottom: 1rem;
 }
 
-/* =========================================
-   HEADER
-   ========================================= */
+
+/* =========================================================
+   2. HEADER AND NAVIGATION
+   ========================================================= */
 
 header {
     background-color: #12355b;
     color: #ffffff;
     position: relative;
-    z-index: 10;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
 nav {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
     min-height: 75px;
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,37 +74,59 @@ nav {
 }
 
 .logo {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 700;
     letter-spacing: 0.3px;
+    white-space: nowrap;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 25px;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 .nav-links a {
+    display: inline-block;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
-    padding: 10px 5px;
-    transition: 0.3s ease;
+    padding: 10px 8px;
+    border-radius: 4px;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
 }
 
+
+/* Navigation hover */
 .nav-links a:hover {
-    color: #67c8ff;
+    color: #12355b;
+    background-color: #67c8ff;
+    transform: translateY(-1px);
 }
 
-.nav-links a:focus {
-    outline: 2px solid #ffffff;
-    outline-offset: 4px;
+
+/* Navigation keyboard focus */
+.nav-links a:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
 }
 
-/* =========================================
-   MAIN CONTENT
-   ========================================= */
+
+/* Navigation active state */
+.nav-links a:active {
+    transform: translateY(1px);
+}
+
+
+/* =========================================================
+   3. MAIN LAYOUT
+   ========================================================= */
 
 main {
     width: 100%;
@@ -107,39 +139,49 @@ section {
     padding: 70px 0;
 }
 
+
+/* Main headings */
+
 section h1 {
-    font-size: 2.8rem;
     margin-bottom: 20px;
     color: #12355b;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 section h2 {
-    font-size: 2rem;
     margin-bottom: 20px;
     color: #12355b;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 section h3 {
-    font-size: 1.3rem;
     margin-bottom: 12px;
     color: #12355b;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
-/* =========================================
-   HERO SECTION
-   ========================================= */
+
+/* =========================================================
+   4. HERO SECTION
+   ========================================================= */
 
 .hero {
     width: 100%;
     max-width: none;
-    min-height: 550px;
+    min-height: 560px;
+
     display: flex;
     align-items: center;
+
     background:
         linear-gradient(
-            rgba(18, 53, 91, 0.88),
-            rgba(18, 53, 91, 0.88)
+            rgba(18, 53, 91, 0.94),
+            rgba(18, 53, 91, 0.94)
         );
+
     color: #ffffff;
 }
 
@@ -150,48 +192,96 @@ section h3 {
 }
 
 .hero h1 {
-    max-width: 750px;
-    font-size: 3.2rem;
-    color: #ffffff;
+    max-width: 800px;
     margin-bottom: 25px;
+
+    color: #ffffff;
+    font-size: 3.2rem;
+    font-weight: 700;
 }
 
 .hero p {
-    max-width: 700px;
-    font-size: 1.15rem;
+    max-width: 720px;
     margin-bottom: 30px;
+
+    color: #ffffff;
+    font-size: 1.15rem;
 }
 
-/* =========================================
-   BUTTONS
-   ========================================= */
+
+/* Hero image */
+
+.hero img {
+    width: 100%;
+    max-width: 900px;
+    height: 360px;
+
+    margin: 0 0 30px;
+
+    object-fit: cover;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   5. BUTTONS
+   ========================================================= */
 
 .button {
     display: inline-block;
+
     background-color: #1976d2;
     color: #ffffff;
+
     text-decoration: none;
+    text-align: center;
+
     border: none;
     border-radius: 6px;
+
     padding: 13px 24px;
+
+    font: inherit;
     font-weight: 700;
+
     cursor: pointer;
-    transition: 0.3s ease;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
+
+
+/* Button hover */
 
 .button:hover {
     background-color: #0f5da8;
     transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
 }
 
-.button:focus {
+
+/* Button keyboard focus */
+
+.button:focus-visible {
     outline: 3px solid #67c8ff;
     outline-offset: 3px;
 }
 
-/* =========================================
-   INTRODUCTION
-   ========================================= */
+
+/* Button active */
+
+.button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   6. INTRODUCTION SECTION
+   ========================================================= */
 
 .intro {
     text-align: center;
@@ -202,14 +292,17 @@ section h3 {
     margin: 0 auto;
 }
 
-/* =========================================
-   SERVICES
-   ========================================= */
+
+/* =========================================================
+   7. SERVICES PREVIEW
+   ========================================================= */
 
 .services-preview {
-    background-color: #f5f7fa;
-    max-width: none;
     width: 100%;
+    max-width: none;
+
+    background-color: #f5f7fa;
+
     text-align: center;
 }
 
@@ -220,41 +313,91 @@ section h3 {
     margin-right: auto;
 }
 
+
+/* =========================================================
+   8. GRID LAYOUTS
+   ========================================================= */
+
 .service-container,
 .services-list,
 .location-container,
 .mission-vision {
     width: 90%;
     max-width: 1200px;
+
     margin: 30px auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
+
+/* =========================================================
+   9. SERVICE CARDS
+   ========================================================= */
+
 .service-card,
 .location-card,
 .mission-vision article {
     background-color: #ffffff;
+
     padding: 30px;
+
+    border: 1px solid #e2e8f0;
     border-radius: 10px;
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
     text-align: left;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
+
+
+/* Service card images */
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+
+    margin: 0 0 20px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+/* Service card hover */
 
 .service-card:hover,
 .location-card:hover {
-    transform: translateY(-4px);
-    transition: 0.3s ease;
+    transform: translateY(-5px);
+
+    border-color: #67c8ff;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Service card paragraphs */
+
+.service-card p {
+    margin-bottom: 20px;
 }
 
 .service-card .button {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-/* =========================================
-   ABOUT PAGE
-   ========================================= */
+
+/* =========================================================
+   10. ABOUT PAGE
+   ========================================================= */
 
 .about-section {
     text-align: center;
@@ -270,20 +413,23 @@ section h3 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* =========================================
-   WHY CHOOSE US
-   ========================================= */
+
+/* =========================================================
+   11. WHY CHOOSE US
+   ========================================================= */
 
 .why-choose-us {
-    background-color: #f5f7fa;
-    max-width: none;
     width: 100%;
+    max-width: none;
+
+    background-color: #f5f7fa;
 }
 
 .why-choose-us h2,
 .why-choose-us ul {
     width: 90%;
     max-width: 1200px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -296,9 +442,10 @@ section h3 {
     margin-bottom: 10px;
 }
 
-/* =========================================
-   SERVICE PAGE
-   ========================================= */
+
+/* =========================================================
+   12. SERVICE PAGE
+   ========================================================= */
 
 .services-intro {
     text-align: center;
@@ -306,6 +453,7 @@ section h3 {
 
 .services-intro p {
     max-width: 800px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -314,9 +462,10 @@ section h3 {
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* =========================================
-   ENQUIRY AND CONTACT FORMS
-   ========================================= */
+
+/* =========================================================
+   13. ENQUIRY AND CONTACT FORMS
+   ========================================================= */
 
 .enquiry-intro,
 .contact-intro {
@@ -326,6 +475,7 @@ section h3 {
 .enquiry-intro p,
 .contact-intro p {
     max-width: 800px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -335,47 +485,89 @@ section h3 {
     max-width: 800px;
 }
 
+
+/* Form container */
+
 form {
     background-color: #f5f7fa;
+
     padding: 35px;
+
+    border: 1px solid #e2e8f0;
     border-radius: 10px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
 }
+
+
+/* Form groups */
 
 .form-group {
     margin-bottom: 20px;
 }
 
+
+/* Form labels */
+
 .form-group label {
     display: block;
-    font-weight: 700;
+
     margin-bottom: 7px;
+
+    color: #12355b;
+
+    font-weight: 700;
 }
+
+
+/* Form controls */
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
+
     padding: 12px;
+
     border: 1px solid #cbd5e1;
     border-radius: 5px;
-    font: inherit;
+
     background-color: #ffffff;
+    color: #1f2937;
+
+    font: inherit;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
+
+
+/* Form focus */
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    outline: 2px solid #1976d2;
+    outline: none;
+
     border-color: #1976d2;
+
+    box-shadow:
+        0 0 0 3px rgba(25, 118, 210, 0.15);
 }
 
+
+/* Textarea */
+
 .form-group textarea {
+    min-height: 150px;
     resize: vertical;
 }
 
-/* =========================================
-   CONTACT DETAILS
-   ========================================= */
+
+/* =========================================================
+   14. CONTACT DETAILS
+   ========================================================= */
 
 .contact-details {
     text-align: center;
@@ -387,24 +579,46 @@ form {
 
 .contact-details a {
     color: #1976d2;
+
     font-weight: 600;
     text-decoration: none;
+
+    transition: color 0.3s ease;
 }
 
+
+/* Contact link hover */
+
 .contact-details a:hover {
+    color: #0f5da8;
     text-decoration: underline;
 }
 
+
+/* Contact link focus */
+
+.contact-details a:focus-visible {
+    outline: 3px solid #67c8ff;
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   15. LOCATIONS
+   ========================================================= */
+
 .locations {
-    background-color: #f5f7fa;
-    max-width: none;
     width: 100%;
+    max-width: none;
+
+    background-color: #f5f7fa;
 }
 
 .locations > h2,
 .locations > p {
     width: 90%;
     max-width: 1200px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -413,20 +627,23 @@ form {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* =========================================
-   ENQUIRY INFORMATION
-   ========================================= */
+
+/* =========================================================
+   16. ENQUIRY INFORMATION
+   ========================================================= */
 
 .enquiry-information {
-    background-color: #f5f7fa;
-    max-width: none;
     width: 100%;
+    max-width: none;
+
+    background-color: #f5f7fa;
 }
 
 .enquiry-information h2,
 .enquiry-information ul {
     width: 90%;
     max-width: 800px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -439,16 +656,20 @@ form {
     margin-bottom: 10px;
 }
 
-/* =========================================
-   CALL TO ACTION
-   ========================================= */
+
+/* =========================================================
+   17. CALL TO ACTION
+   ========================================================= */
 
 .cta {
-    text-align: center;
-    background-color: #12355b;
-    color: #ffffff;
-    max-width: none;
     width: 100%;
+    max-width: none;
+
+    background-color: #12355b;
+
+    color: #ffffff;
+
+    text-align: center;
 }
 
 .cta h2 {
@@ -457,18 +678,25 @@ form {
 
 .cta p {
     max-width: 700px;
+
     margin-left: auto;
     margin-right: auto;
+
+    color: #ffffff;
 }
 
-/* =========================================
-   FOOTER
-   ========================================= */
+
+/* =========================================================
+   18. FOOTER
+   ========================================================= */
 
 footer {
     background-color: #1f2937;
+
     color: #ffffff;
+
     text-align: center;
+
     padding: 30px 20px;
 }
 
@@ -476,13 +704,31 @@ footer p {
     margin-bottom: 5px;
 }
 
-/* =========================================
-   TABLET
-   ========================================= */
+
+/* =========================================================
+   19. TABLET RESPONSIVE DESIGN
+   1023px AND BELOW
+   ========================================================= */
 
 @media (max-width: 1023px) {
 
     nav {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        padding: 8px 6px;
+    }
+
+    section {
         width: 92%;
     }
 
@@ -491,81 +737,298 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .mission-vision {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 520px;
+    }
+
     .hero h1 {
         font-size: 2.7rem;
     }
+
+    .hero img {
+        height: 320px;
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 1.9rem;
+    }
+
+    .service-card {
+        padding: 25px;
+    }
+
+    .service-card img {
+        height: 210px;
+    }
 }
 
-/* =========================================
-   MOBILE
-   ========================================= */
+
+/* =========================================================
+   20. MOBILE RESPONSIVE DESIGN
+   767px AND BELOW
+   ========================================================= */
 
 @media (max-width: 767px) {
 
+    body {
+        font-size: 15px;
+    }
+
+
+    /* Mobile navigation */
+
     nav {
         width: 90%;
+
         padding: 20px 0;
+
         flex-direction: column;
+
         align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100%;
+
+        font-size: 1.2rem;
+S
+        white-space: normal;
     }
 
     .nav-links {
         width: 100%;
+
         flex-direction: column;
-        align-items: flex-start;
+
+        align-items: stretch;
+
         gap: 5px;
+    }
+
+    .nav-links li {
+        width: 100%;
     }
 
     .nav-links a {
         display: block;
-        padding: 8px 0;
+
+        width: 100%;
+
+        padding: 9px 10px;
     }
+
+
+    /* Mobile sections */
 
     section {
         width: 90%;
+
         padding: 50px 0;
     }
 
     section h1 {
         font-size: 2.1rem;
+
+        margin-bottom: 16px;
     }
 
     section h2 {
         font-size: 1.7rem;
+
+        margin-bottom: 16px;
     }
 
+    section h3 {
+        font-size: 1.2rem;
+    }
+
+
+    /* Mobile hero */
+
     .hero {
-        min-height: 500px;
+        min-height: auto;
+
+        padding: 55px 0;
+    }
+
+    .hero-content {
+        width: 90%;
     }
 
     .hero h1 {
         font-size: 2.3rem;
+
+        margin-bottom: 20px;
     }
 
     .hero p {
         font-size: 1rem;
+
+        margin-bottom: 25px;
     }
+
+    .hero img {
+        width: 100%;
+
+        height: 240px;
+
+        margin-bottom: 25px;
+
+        border-radius: 8px;
+
+        object-fit: cover;
+    }
+
+
+    /* Mobile grids */
 
     .service-container,
     .services-list,
     .mission-vision,
     .location-container {
         width: 90%;
+
         grid-template-columns: 1fr;
+
+        gap: 20px;
     }
+
+
+    /* Mobile cards */
 
     .service-card,
     .location-card,
     .mission-vision article {
-        padding: 25px;
+        padding: 22px;
     }
+
+    .service-card img {
+        width: 100%;
+
+        height: 200px;
+
+        margin-bottom: 18px;
+    }
+
+
+    /* Mobile buttons */
+
+    .button {
+        width: 100%;
+
+        padding: 12px 18px;
+    }
+
+
+    /* Mobile forms */
 
     form {
         padding: 25px 20px;
     }
 
-    .button {
-        width: 100%;
-        text-align: center;
+    .form-group {
+        margin-bottom: 18px;
     }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 11px;
+    }
+
+    .form-group textarea {
+        min-height: 130px;
+    }
+
+
+    /* Mobile footer */
+
+    footer {
+        padding: 25px 15px;
+    }
+}
+
+
+/* =========================================================
+   21. VERY SMALL MOBILE SCREENS
+   480px AND BELOW
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 1.05rem;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero img {
+        height: 210px;
+    }
+
+    section h1 {
+        font-size: 1.8rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-card img {
+        height: 180px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+}
+/* Form Button Styling */
+button.btn {
+    display: inline-block;
+    width: auto;
+    min-width: 180px;
+    padding: 12px 24px;
+    border: 2px solid #1976d2;
+    border-radius: 5px;
+    background-color: #1976d2;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+button.btn:hover {
+    background-color: #125aa0;
+    border-color: #125aa0;
+}
+
+button.btn:focus-visible {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+button.btn:active {
+    transform: translateY(1px);
 }
