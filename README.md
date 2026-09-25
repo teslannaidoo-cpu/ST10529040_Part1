@@ -4,7 +4,7 @@
 
 \## Student Information
 
-Student Name: Chade Munsamy
+Student Name: Teslan Tia Naidoo 
 
 Student Number: ST10529040
 
