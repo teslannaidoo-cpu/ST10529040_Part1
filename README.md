@@ -200,35 +200,35 @@ The main navigation allows users to move between all five pages. Each page provi
 
 
 
-\## Changelog
+## Changelog
 
+### Part 1
 
+- Created the initial five-page website structure.
+- Added the Home, About Us, Services, Enquiry and Contact pages.
+- Added the main navigation menu linking the website pages.
+- Added the initial HTML content and structure.
+- Added initial CSS styling and responsive layout.
+- Created the README documentation.
 
-\### Part 1
+### Part 2
 
+- Reviewed and improved the website structure and presentation based on the Part 1 development requirements.
+- Implemented a consistent external CSS stylesheet across all five pages.
+- Improved typography, spacing, colours, buttons, forms and overall page layout.
+- Added CSS hover, focus and active pseudo-classes to improve user interaction.
+- Implemented responsive design using CSS media queries for tablet and mobile screen sizes.
+- Adjusted navigation, content grids, images, forms and typography for smaller screens.
+- Tested the website layout using responsive browser views to check usability on different screen sizes.
+- Updated the README documentation, sitemap, changelog and references.
+- Committed and pushed the Part 2 website updates to GitHub using descriptive Git commits.
 
+## References
 
-\- Created the initial five-page website structure.
+- MDN Web Docs. (n.d.). *CSS: Cascading Style Sheets*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 25 September 2026).
 
-\- Added the Home, About Us, Services, Enquiry and Contact pages.
+- MDN Web Docs. (n.d.). *CSS media queries*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries (Accessed: 25 September 2026).
 
-\- Added the main navigation menu linking the website pages.
+- Nielsen Norman Group. (2014). *Responsive Web Design (RWD) and User Experience*. Available at: https://www.nngroup.com/articles/responsive-web-design-definition/ (Accessed: 25 September 2026).
 
-\- Added the initial HTML content and structure.
-
-\- Added initial CSS styling and responsive layout.
-
-\- Created the README documentation.
-
-
-
-\## References
-
-
-
-\- Nielsen Norman Group. (2024). Usability and User Experience Guidelines.
-
-\- W3C. Web Content Accessibility Guidelines (WCAG).
-
-\- MDN Web Docs. HTML, CSS and JavaScript documentation.
-
+- World Wide Web Consortium (W3C). (2023). *Web Content Accessibility Guidelines (WCAG) 2.2*. Available at: https://www.w3.org/WAI/standards-guidelines/wcag/ (Accessed: 25 September 2026).
