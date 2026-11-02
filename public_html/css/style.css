@@ -82,6 +82,7 @@ nav {
 
 .nav-links {
     list-style: none;
+
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -90,10 +91,13 @@ nav {
 
 .nav-links a {
     display: inline-block;
+
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
+
     padding: 10px 8px;
+
     border-radius: 4px;
 
     transition:
@@ -102,23 +106,17 @@ nav {
         transform 0.3s ease;
 }
 
-
-/* Navigation hover */
 .nav-links a:hover {
     color: #12355b;
     background-color: #67c8ff;
     transform: translateY(-1px);
 }
 
-
-/* Navigation keyboard focus */
 .nav-links a:focus-visible {
     outline: 3px solid #ffffff;
     outline-offset: 3px;
 }
 
-
-/* Navigation active state */
 .nav-links a:active {
     transform: translateY(1px);
 }
@@ -138,9 +136,6 @@ section {
     margin: 0 auto;
     padding: 70px 0;
 }
-
-
-/* Main headings */
 
 section h1 {
     margin-bottom: 20px;
@@ -176,11 +171,7 @@ section h3 {
     display: flex;
     align-items: center;
 
-    background:
-        linear-gradient(
-            rgba(18, 53, 91, 0.94),
-            rgba(18, 53, 91, 0.94)
-        );
+    background-color: #12355b;
 
     color: #ffffff;
 }
@@ -208,9 +199,6 @@ section h3 {
     font-size: 1.15rem;
 }
 
-
-/* Hero image */
-
 .hero img {
     width: 100%;
     max-width: 900px;
@@ -219,6 +207,8 @@ section h3 {
     margin: 0 0 30px;
 
     object-fit: cover;
+    object-position: center;
+
     border-radius: 12px;
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
@@ -254,25 +244,16 @@ section h3 {
         box-shadow 0.3s ease;
 }
 
-
-/* Button hover */
-
 .button:hover {
     background-color: #0f5da8;
     transform: translateY(-2px);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
 }
 
-
-/* Button keyboard focus */
-
 .button:focus-visible {
     outline: 3px solid #67c8ff;
     outline-offset: 3px;
 }
-
-
-/* Button active */
 
 .button:active {
     transform: translateY(0);
@@ -358,15 +339,18 @@ section h3 {
 }
 
 
-/* Service card images */
+/* FULL-WIDTH SERVICE IMAGE BLOCK */
 
 .service-card img {
+    display: block;
+
     width: 100%;
-    height: 220px;
+    height: 300px;
 
     margin: 0 0 20px;
 
     object-fit: cover;
+    object-position: center;
 
     border-radius: 8px;
 }
@@ -384,7 +368,7 @@ section h3 {
 }
 
 
-/* Service card paragraphs */
+/* Service card text */
 
 .service-card p {
     margin-bottom: 20px;
@@ -444,7 +428,7 @@ section h3 {
 
 
 /* =========================================================
-   12. SERVICE PAGE
+   12. SERVICES PAGE
    ========================================================= */
 
 .services-intro {
@@ -485,9 +469,6 @@ section h3 {
     max-width: 800px;
 }
 
-
-/* Form container */
-
 form {
     background-color: #f5f7fa;
 
@@ -499,15 +480,9 @@ form {
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
 }
 
-
-/* Form groups */
-
 .form-group {
     margin-bottom: 20px;
 }
-
-
-/* Form labels */
 
 .form-group label {
     display: block;
@@ -518,9 +493,6 @@ form {
 
     font-weight: 700;
 }
-
-
-/* Form controls */
 
 .form-group input,
 .form-group select,
@@ -542,9 +514,6 @@ form {
         box-shadow 0.3s ease;
 }
 
-
-/* Form focus */
-
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
@@ -555,9 +524,6 @@ form {
     box-shadow:
         0 0 0 3px rgba(25, 118, 210, 0.15);
 }
-
-
-/* Textarea */
 
 .form-group textarea {
     min-height: 150px;
@@ -586,16 +552,10 @@ form {
     transition: color 0.3s ease;
 }
 
-
-/* Contact link hover */
-
 .contact-details a:hover {
     color: #0f5da8;
     text-decoration: underline;
 }
-
-
-/* Contact link focus */
 
 .contact-details a:focus-visible {
     outline: 3px solid #67c8ff;
@@ -770,7 +730,7 @@ footer p {
     }
 
     .service-card img {
-        height: 210px;
+        height: 260px;
     }
 }
 
@@ -805,7 +765,7 @@ footer p {
         width: 100%;
 
         font-size: 1.2rem;
-S
+
         white-space: normal;
     }
 
@@ -891,6 +851,7 @@ S
         border-radius: 8px;
 
         object-fit: cover;
+        object-position: center;
     }
 
 
@@ -916,12 +877,20 @@ S
         padding: 22px;
     }
 
+
+    /* Mobile service image blocks */
+
     .service-card img {
         width: 100%;
 
-        height: 200px;
+        height: 220px;
 
         margin-bottom: 18px;
+
+        object-fit: cover;
+        object-position: center;
+
+        border-radius: 8px;
     }
 
 
@@ -991,44 +960,243 @@ S
     }
 
     .service-card img {
-        height: 180px;
+        height: 190px;
+
+        object-fit: cover;
+        object-position: center;
     }
 
     .service-card {
         padding: 20px;
     }
 }
-/* Form Button Styling */
-button.btn {
+
+
+.btn,
+button[type="submit"] {
     display: inline-block;
-    width: auto;
-    min-width: 180px;
-    padding: 12px 24px;
-    border: 2px solid #1976d2;
-    border-radius: 5px;
     background-color: #1976d2;
     color: #ffffff;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s ease,
-                border-color 0.3s ease,
-                transform 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
-button.btn:hover {
-    background-color: #125aa0;
-    border-color: #125aa0;
+.btn:hover,
+button[type="submit"]:hover {
+    background-color: #125ca1;
 }
 
-button.btn:focus-visible {
-    outline: 3px solid #ffcc00;
-    outline-offset: 3px;
+/* PART 3 - FAQ ACCORDION STYLING */
+
+.faq-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 25px;
 }
 
-button.btn:active {
-    transform: translateY(1px);
+.faq-section h2 {
+    color: #123b63;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 20px;
+    margin-top: 12px;
+    background-color: #1976d2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #125ca1;
+}
+
+.faq-question span {
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.faq-answer {
+    padding: 18px 20px;
+    background-color: #f4f7fa;
+    border-left: 4px solid #1976d2;
+    line-height: 1.7;
+    color: #333333;
+}
+
+.faq-answer[hidden] {
+    display: none;
+}
+
+/* Mobile FAQ layout */
+@media (max-width: 600px) {
+    .faq-section {
+        padding: 40px 15px;
+    }
+
+    .faq-section h2 {
+        font-size: 26px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        padding: 15px;
+    }
+}/* PART 3 - IMAGE GALLERY */
+
+.gallery-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    color: #123b63;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Lightbox */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding: 50px 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}/* Part 3 - Interactive Map */
+
+.map-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: #123b63;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#serviceMap {
+    width: 100%;
+    height: 400px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    #serviceMap {
+        height: 300px;
+    }
+}/* Part 3 - Dynamic Service Controls */
+
+.service-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.service-controls input,
+.service-controls select {
+    flex: 1;
+    min-width: 180px;
+    padding: 13px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+#serviceResults {
+    margin-bottom: 20px;
+    color: #123b63;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .service-controls {
+        flex-direction: column;
+    }
+
+    .service-controls input,
+    .service-controls select {
+        width: 100%;
+    }
 }

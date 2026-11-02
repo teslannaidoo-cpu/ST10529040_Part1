@@ -1,26 +1,33 @@
-<!-- Durban HomeFix Plumbing - Home Page -->
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Durban HomeFix Plumbing - Home Page -->
+<!-- Student: Teslan Tia Naidoo | Student Number: ST10529040 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Durban Home Fixing Plumbing | Professional Plumbing Services</title>
+    <title>Plumbing Services in Durban | Durban HomeFix Plumbing</title>
+
+    <meta name="description" content="Looking for reliable plumbing services in Durban? Durban HomeFix Plumbing assists with plumbing repairs, leaking pipes, blocked drains and maintenance.">
+
+    <meta name="keywords" content="plumbers Durban, plumbing services Durban, plumbing repairs, leak repairs, blocked drains, plumbing maintenance">
+
+    <meta name="author" content="Teslan Tia Naidoo">
+    <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header and Navigation -->
     <header>
         <nav>
-            <div class="logo">
-                Durban Home Fixing Plumbing
-            </div>
+            <div class="logo">Durban Home Fixing Plumbing</div>
 
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="enquiry.html">Enquiry</a></li>
@@ -29,22 +36,19 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
 
-        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
 
                 <h1>Reliable Plumbing Services in Durban</h1>
+
                 <img
-    src="images/plumbing-repair.jpg"
-    srcset="images/plumbing-repair.jpg 800w,
-            images/plumbing-repair.jpg 1200w"
-    sizes="(max-width: 767px) 90vw,
-           (max-width: 1023px) 85vw,
-           700px"
-    alt="Plumber repairing a pipe under a sink">
+                    src="images/plumbing-repair.jpg"
+                    alt="Plumber repairing a pipe under a sink"
+                    loading="eager"
+                    fetchpriority="high">
+
                 <p>
                     Professional home plumbing solutions you can rely on.
                     From repairs and maintenance to installations, Durban Home
@@ -58,9 +62,7 @@
             </div>
         </section>
 
-        <!-- Introduction -->
         <section class="intro">
-
             <h2>Your Trusted Home Plumbing Solution</h2>
 
             <p>
@@ -70,11 +72,13 @@
                 solutions for everyday household needs.
             </p>
 
+            <p>
+                Learn more <a href="about.html">about our plumbing services</a>
+                and the areas we serve.
+            </p>
         </section>
 
-        <!-- Services Preview -->
         <section class="services-preview">
-
             <h2>Our Plumbing Services</h2>
 
             <div class="service-container">
@@ -108,38 +112,90 @@
             <a href="services.html" class="button">
                 View All Services
             </a>
-
         </section>
 
-        <!-- Call to Action -->
-        <section class="cta">
-
-            <h2>Need Plumbing Assistance?</h2>
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
 
             <p>
-                Get in touch with Durban Home Fixing Plumbing for your
-                household plumbing requirements.
+                Find answers to some common questions about our plumbing
+                services.
             </p>
 
-            <a href="enquiry.html" class="button">
-                Make an Enquiry
-            </a>
+            <div class="faq-container">
 
+                <div class="faq-item">
+                    <button type="button" class="faq-question"
+                            aria-expanded="false">
+                        What plumbing services do you offer?
+                        <span aria-hidden="true">+</span>
+                    </button>
+
+                    <div class="faq-answer" hidden>
+                        <p>
+                            We assist with plumbing repairs, leak repairs,
+                            blocked drains, pipe repairs, bathroom plumbing
+                            and general plumbing maintenance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question"
+                            aria-expanded="false">
+                        Which areas do you service?
+                        <span aria-hidden="true">+</span>
+                    </button>
+
+                    <div class="faq-answer" hidden>
+                        <p>
+                            We provide plumbing assistance in Durban and
+                            surrounding areas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question"
+                            aria-expanded="false">
+                        How can I request a plumbing service?
+                        <span aria-hidden="true">+</span>
+                    </button>
+
+                    <div class="faq-answer" hidden>
+                        <p>
+                            You can complete our online enquiry form and
+                            provide your contact details and information
+                            about the plumbing service you require.
+                            Visit our <a href="enquiry.html">Enquiry page</a>
+                            to get started.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Need a Reliable Plumbing Service?</h2>
+
+            <p>
+                Get in touch with Durban Home Fixing Plumbing to discuss
+                your plumbing requirements.
+            </p>
+
+            <a href="enquiry.html" class="btn">Make an Enquiry</a>
+            <a href="contact.html" class="btn">Contact Us</a>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer>
-
         <p>
-            &copy; 2026 Durban Home Fixing Plumbing. All Rights Reserved.
+            &copy; 2026 Durban Home Fixing Plumbing. All rights reserved.
         </p>
 
-        <p>
-            Durban, KwaZulu-Natal, South Africa
-        </p>
-
+        <p>Durban, KwaZulu-Natal, South Africa</p>
     </footer>
 
     <script src="js/script.js"></script>

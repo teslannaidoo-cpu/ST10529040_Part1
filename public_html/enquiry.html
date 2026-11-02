@@ -1,6 +1,3 @@
-<!-- Durban HomeFix Plumbing - Enquiry Page -->
-<!-- Student: Teslan Tia Naidoo | Student Number: ST10529040 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Enquiry | Durban Home Fixing Plumbing</title>
+    <title>Plumbing Service Enquiry | Durban HomeFix Plumbing</title>
+
+    <meta name="description" content="Request plumbing repairs, leak repairs, blocked drain services and plumbing maintenance in Durban. Contact Durban HomeFix Plumbing for assistance.">
+
+    <meta name="keywords" content="plumbing enquiry Durban, plumbing repairs Durban, leak repairs, blocked drains, plumbing maintenance">
+
+    <meta name="author" content="Teslan Tia Naidoo">
+    <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,30 +22,14 @@
     <!-- Header and Navigation -->
     <header>
         <nav>
-            <div class="logo">
-                Durban Home Fixing Plumbing
-            </div>
+            <div class="logo">Durban Home Fixing Plumbing</div>
 
             <ul class="nav-links">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
-
-                <li>
-                    <a href="services.html">Services</a>
-                </li>
-
-                <li>
-                    <a href="enquiry.html" aria-current="page">Enquiry</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -49,21 +37,17 @@
     <!-- Main Content -->
     <main>
 
-        <!-- Enquiry Introduction -->
         <section class="enquiry-intro">
-
             <h1>Request a Plumbing Service</h1>
 
             <p>
                 Complete the form below and provide details about the
-                plumbing service you require. We will use the information
-                provided to respond to your enquiry.
+                plumbing service you require. Please provide accurate
+                information so that your enquiry can be reviewed.
             </p>
-
         </section>
 
-        <!-- Enquiry Form -->
-        <section class="form-section">
+        <section class="enquiry-section">
 
             <h2>Plumbing Service Enquiry</h2>
 
@@ -71,125 +55,88 @@
 
                 <div class="form-group">
                     <label for="name">Full Name</label>
-
                     <input
                         type="text"
                         id="name"
-                        name="name"
+                        name="Full Name"
                         placeholder="Enter your full name"
-                        autocomplete="name"
-                        required>
+                        required
+                        minlength="2">
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address</label>
-
                     <input
                         type="email"
                         id="email"
-                        name="email"
+                        name="Email Address"
                         placeholder="Enter your email address"
-                        autocomplete="email"
                         required>
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Phone Number</label>
-
+                    <label for="phone">Contact Number</label>
                     <input
                         type="tel"
                         id="phone"
-                        name="phone"
-                        placeholder="Enter your phone number"
-                        autocomplete="tel"
-                        required>
+                        name="Contact Number"
+                        placeholder="Enter your contact number"
+                        required
+                        pattern="[0-9+\s()-]{7,20}">
                 </div>
 
                 <div class="form-group">
-                    <label for="location">Location</label>
-
+                    <label for="location">Your Location</label>
                     <input
                         type="text"
                         id="location"
-                        name="location"
-                        placeholder="Enter your area or suburb"
-                        autocomplete="address-level2"
+                        name="Location"
+                        placeholder="Enter your suburb or area"
                         required>
                 </div>
 
                 <div class="form-group">
-                    <label for="service">Service Required</label>
+                    <label for="service">Select Plumbing Service</label>
 
-                    <select id="service" name="service" required>
-
-                        <option value="" selected disabled>
-                            Select a service
-                        </option>
-
-                        <option value="plumbing-repairs">
-                            Plumbing Repairs
-                        </option>
-
-                        <option value="leak-repairs">
-                            Leak Repairs
-                        </option>
-
-                        <option value="blocked-drains">
-                            Blocked Drains
-                        </option>
-
-                        <option value="pipe-repairs">
-                            Pipe Repairs
-                        </option>
-
-                        <option value="bathroom-plumbing">
-                            Bathroom Plumbing
-                        </option>
-
-                        <option value="plumbing-maintenance">
-                            Plumbing Maintenance
-                        </option>
-
+                    <select id="service" name="Plumbing Service" required>
+                        <option value="">Select a service</option>
+                        <option value="Plumbing Repairs">Plumbing Repairs</option>
+                        <option value="Leak Repairs">Leak Repairs</option>
+                        <option value="Blocked Drains">Blocked Drains</option>
+                        <option value="Pipe Repairs">Pipe Repairs</option>
+                        <option value="Bathroom Plumbing">Bathroom Plumbing</option>
+                        <option value="Plumbing Maintenance">Plumbing Maintenance</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="contactMethod">
-                        Preferred Contact Method
-                    </label>
+                    <label for="contactMethod">Preferred Contact Method</label>
 
                     <select
                         id="contactMethod"
-                        name="contactMethod"
+                        name="Preferred Contact Method"
                         required>
 
-                        <option value="" selected disabled>
-                            Select a contact method
-                        </option>
-
-                        <option value="phone">
-                            Phone
-                        </option>
-
-                        <option value="email">
-                            Email
-                        </option>
-
+                        <option value="">Select a contact method</option>
+                        <option value="Phone">Phone</option>
+                        <option value="Email">Email</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">
-                        Describe Your Plumbing Requirement
-                    </label>
+                    <label for="message">Describe Your Plumbing Requirement</label>
 
                     <textarea
                         id="message"
-                        name="message"
+                        name="Plumbing Requirement"
+                        placeholder="Describe the plumbing problem or service you require"
                         rows="6"
-                        placeholder="Tell us about the plumbing problem or service you require"
-                        required></textarea>
+                        required
+                        minlength="10"></textarea>
                 </div>
+
+                <p id="enquiryFeedback" aria-live="polite"></p>
 
                 <button type="submit" class="btn">
                     Submit Enquiry
@@ -199,58 +146,15 @@
 
         </section>
 
-        <!-- Additional Information -->
-        <section class="info-section">
-
-            <h2>Before You Submit</h2>
-
-            <p>
-                Please provide accurate contact details and as much
-                information as possible about the plumbing issue. This
-                helps us understand your requirements and respond to
-                your enquiry appropriately.
-            </p>
-
-            <p>
-                Durban Home Fixing Plumbing provides services in Durban
-                and surrounding areas.
-            </p>
-
-        </section>
-
-        <!-- Call to Action -->
-        <section class="cta">
-
-            <h2>Need Assistance?</h2>
-
-            <p>
-                If you have questions about our services, contact us
-                directly.
-            </p>
-
-            <a href="contact.html" class="btn">
-                Contact Us
-            </a>
-
-        </section>
-
     </main>
 
     <!-- Footer -->
     <footer>
-
-        <p>
-            &copy; 2026 Durban Home Fixing Plumbing. All rights reserved.
-        </p>
-
-        <p>
-            Durban, KwaZulu-Natal, South Africa
-        </p>
-
+        <p>&copy; 2026 Durban Home Fixing Plumbing. All rights reserved.</p>
+        <p>Durban, KwaZulu-Natal, South Africa</p>
     </footer>
 
     <script src="js/script.js"></script>
 
 </body>
-
 </html>

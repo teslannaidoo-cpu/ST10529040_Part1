@@ -4,7 +4,7 @@
 
 \## Student Information
 
-Student Name: Chade Munsamy
+Student Name: Teslan Tia Naidoo 
 
 Student Number: ST10529040
 
@@ -21,6 +21,16 @@ The website consists of a Home page, About Us page, Services page, Enquiry page 
 
 
 The website is intended to be easy to navigate, responsive across different devices and suitable for homeowners who require reliable plumbing services in Durban and surrounding areas.
+
+## Part 3 Changelog
+
+- Updated the student information to reflect the correct student name and number.
+- Added SEO title tags, meta descriptions and meta keywords to updated website pages.
+- Improved the enquiry and contact forms with HTML validation.
+- Added JavaScript functionality to prepare enquiry and contact emails.
+- Created a robots.txt file for search engine crawling instructions.
+- Created a sitemap.xml file listing the five website pages.
+- Added and updated website content while maintaining the original Durban HomeFix Plumbing project structure.
 
 
 

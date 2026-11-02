@@ -8,9 +8,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | Durban Home Fixing Plumbing</title>
+    <title>Contact Us | Durban HomeFix Plumbing</title>
+
+    <meta name="description"
+          content="Contact Durban HomeFix Plumbing for plumbing repairs, leak repairs and maintenance services in Durban and surrounding areas.">
+
+    <meta name="keywords"
+          content="contact plumber Durban, plumbing services Durban, plumbing repairs, leak repairs, Durban plumber">
+
+    <meta name="author" content="Teslan Tia Naidoo">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet Map Styling -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 
 <body>
@@ -19,181 +31,121 @@
     <header>
         <nav>
             <div class="logo">
-                Durban Home Fixing Plumbing
+                Durban HomeFix Plumbing
             </div>
 
             <ul class="nav-links">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
-
-                <li>
-                    <a href="services.html">Services</a>
-                </li>
-
-                <li>
-                    <a href="enquiry.html">Enquiry</a>
-                </li>
-
-                <li>
-                    <a href="contact.html" aria-current="page">Contact</a>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
 
-        <!-- Contact Introduction -->
-        <section class="contact-intro">
+        <!-- Page Introduction -->
+        <section class="page-banner">
+            <h1>Contact Durban HomeFix Plumbing</h1>
+            <p>Get in touch with us for reliable plumbing assistance.</p>
+        </section>
 
-            <h1>Contact Durban Home Fixing Plumbing</h1>
+        <!-- Contact Information -->
+        <section class="contact-section">
+
+            <h2>Get In Touch</h2>
 
             <p>
-                Have a plumbing problem or need more information about our
-                services? Contact us using the details below or complete
-                the contact form.
+                We are available to assist with plumbing repairs,
+                maintenance and general plumbing enquiries.
             </p>
 
-        </section>
+            <div class="contact-details">
 
-        <!-- Contact Details -->
-        <section class="contact-details">
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:0683826793">068 382 6793</a>
+                </p>
 
-            <h2>Get in Touch</h2>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:info@durbanhomefixing.co.za">
+                        info@durbanhomefixing.co.za
+                    </a>
+                </p>
 
-            <div class="contact-grid">
-
-                <div class="contact-card">
-                    <h3>Phone</h3>
-
-                    <p>
-                        <a href="tel:+27683826793">
-                            068 382 6793
-                        </a>
-                    </p>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Email</h3>
-
-                    <p>
-                        <a href="mailto:info@durbanhomefixing.co.za">
-                            info@durbanhomefixing.co.za
-                        </a>
-                    </p>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Service Area</h3>
-
-                    <p>
-                        Durban and surrounding areas in KwaZulu-Natal.
-                    </p>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Business Hours</h3>
-
-                    <p>
-                        Contact us to enquire about our availability
-                        and plumbing services.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Locations -->
-        <section class="locations">
-
-            <h2>Areas We Serve</h2>
-
-            <div class="location-grid">
-
-                <article class="location-card">
-                    <h3>Durban Central</h3>
-
-                    <p>
-                        Plumbing services for customers in Durban Central
-                        and nearby areas.
-                    </p>
-                </article>
-
-                <article class="location-card">
-                    <h3>Durban North</h3>
-
-                    <p>
-                        Plumbing assistance for customers in Durban North
-                        and surrounding areas.
-                    </p>
-                </article>
+                <p>
+                    <strong>Service Area:</strong>
+                    Durban and surrounding areas, KwaZulu-Natal.
+                </p>
 
             </div>
 
         </section>
 
         <!-- Contact Form -->
-        <section class="form-section">
+        <section class="contact-form-section">
 
             <h2>Send Us a Message</h2>
+
+            <p>
+                Complete the form below with your contact details
+                and message.
+            </p>
 
             <form id="contactForm">
 
                 <div class="form-group">
                     <label for="contactName">Full Name</label>
 
-                    <input
-                        type="text"
-                        id="contactName"
-                        name="contactName"
-                        placeholder="Enter your full name"
-                        autocomplete="name"
-                        required>
+                    <input type="text"
+                           id="contactName"
+                           name="contactName"
+                           placeholder="Enter your full name"
+                           autocomplete="name"
+                           required
+                           minlength="2">
                 </div>
 
                 <div class="form-group">
                     <label for="contactEmail">Email Address</label>
 
-                    <input
-                        type="email"
-                        id="contactEmail"
-                        name="contactEmail"
-                        placeholder="Enter your email address"
-                        autocomplete="email"
-                        required>
+                    <input type="email"
+                           id="contactEmail"
+                           name="contactEmail"
+                           placeholder="Enter your email address"
+                           autocomplete="email"
+                           required>
                 </div>
 
                 <div class="form-group">
                     <label for="contactPhone">Phone Number</label>
 
-                    <input
-                        type="tel"
-                        id="contactPhone"
-                        name="contactPhone"
-                        placeholder="Enter your phone number"
-                        autocomplete="tel"
-                        required>
+                    <input type="tel"
+                           id="contactPhone"
+                           name="contactPhone"
+                           placeholder="Enter your phone number"
+                           autocomplete="tel"
+                           required>
                 </div>
 
                 <div class="form-group">
-                    <label for="contactMessage">
-                        Message
-                    </label>
+                    <label for="contactMessage">Message</label>
 
-                    <textarea
-                        id="contactMessage"
-                        name="contactMessage"
-                        rows="6"
-                        placeholder="Enter your message"
-                        required></textarea>
+                    <textarea id="contactMessage"
+                              name="contactMessage"
+                              rows="6"
+                              minlength="10"
+                              maxlength="1000"
+                              placeholder="Enter your message"
+                              required></textarea>
                 </div>
+
+                <p id="contactFeedback"
+                   role="status"
+                   aria-live="polite"></p>
 
                 <button type="submit" class="btn">
                     Send Message
@@ -205,7 +157,6 @@
 
         <!-- Call to Action -->
         <section class="cta">
-
             <h2>Need a Plumbing Service?</h2>
 
             <p>
@@ -213,9 +164,23 @@
                 and provide details about your requirements.
             </p>
 
-            <a href="enquiry.html" class="btn">
-                Make an Enquiry
-            </a>
+            <a href="enquiry.html" class="btn">Make an Enquiry</a>
+        </section>
+
+        <!-- Interactive Durban Service Area Map -->
+        <section class="map-section">
+
+            <h2>Our Service Area</h2>
+
+            <p>
+                We provide plumbing services throughout Durban
+                and surrounding areas.
+            </p>
+
+            <div id="serviceMap"
+                 role="application"
+                 aria-label="Interactive map showing the general Durban service area">
+            </div>
 
         </section>
 
@@ -223,19 +188,15 @@
 
     <!-- Footer -->
     <footer>
-
-        <p>
-            &copy; 2026 Durban Home Fixing Plumbing. All rights reserved.
-        </p>
-
-        <p>
-            Durban, KwaZulu-Natal, South Africa
-        </p>
-
+        <p>&copy; 2026 Durban HomeFix Plumbing. All rights reserved.</p>
+        <p>Durban, KwaZulu-Natal, South Africa</p>
     </footer>
 
+    <!-- Leaflet Map Library -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Website JavaScript -->
     <script src="js/script.js"></script>
 
 </body>
-
 </html>
