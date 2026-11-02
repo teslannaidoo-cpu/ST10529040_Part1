@@ -1000,6 +1000,9 @@ button[type="submit"]:hover {
     padding: 60px 25px;
 }
 
+button.btn:active {
+    transform: translateY(1px);
+}
 .faq-section h2 {
     color: #123b63;
     font-size: 32px;
